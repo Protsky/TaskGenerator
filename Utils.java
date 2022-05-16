@@ -39,12 +39,6 @@ public class Utils {
       String lon = String.format("%f", convertCupLongitude(tokens[4]));
       String elev = tokens[5];
 
-      //double latTemp = convertCupLatitude(lat);
-      //lat = String.valueOf(latTemp);
-
-      // Then all that's left to do is to create a new object of `waypoint` type
-      // and pass all the gathered information.
-
       Waypoint waypoint = new Waypoint(code, lat, lon, elev);
       myWaypoint.add(waypoint);
 
@@ -302,8 +296,5 @@ public class Utils {
       }
     }
   }
-
-  
-
 
 }
